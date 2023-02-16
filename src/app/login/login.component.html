@@ -1,4 +1,5 @@
 <div class="container">
+
   <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onFormSubmit(loginForm.value)">
       <h2>Please login using your nickname</h2>
       <mat-form-field class="example-full-width">
@@ -10,4 +11,5 @@
           <button type="submit" [disabled]="!loginForm.valid" mat-fab color="primary"><mat-icon>login</mat-icon></button>
       </div>
   </form>
+
 </div>
